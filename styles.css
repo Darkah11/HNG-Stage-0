@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 40px 10px;
+    
+}
+ul {
+    margin-top: 20px;
+}
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #120c0c5d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image {
+   height: fit-content;
+   position: relative;
+}
+.image img {
+    width: 100%;
+    object-fit: cover;
+}
+.details {
+    padding: 20px;
+    line-height: 1.8;
+}
+.bio {
+    margin-top: 10px;
+}
+.time {
+    color: rgb(132, 121, 4);
+}
+.links {
+    list-style-type: none;
+}
+.hobbies li, .dislikes li {
+    margin-left: 20px;
+}
+.links a {
+    color: rgb(8, 99, 129);
+    transition:  all 300ms ease;
+}
+.links a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+.image::after {
+    content: "";
+    position: absolute;
+    padding-top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0b0d172c;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.image:hover::after {
+    opacity: 1;  
+}
+
+@media (min-width: 1024px) {
+  .card {
+    display: flex;
+    max-width: 100%;
+  }
+  .image {
+    height: auto;
+    min-width: 30%;
+  }
+  .image img {
+    height: 100%;
+    width: 100%;
+  }
+  .lists-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hobbies li, .dislikes li {
+    margin-left: 0;
+}
+  .hobbies, .dislikes {
+    list-style-type: none;
+}
+  
+}
+@media (min-width: 1280px) {
+    body {
+        padding: 0 50px;
+    }
+}
