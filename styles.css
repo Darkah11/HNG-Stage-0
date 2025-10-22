@@ -39,6 +39,27 @@ ul {
     padding: 20px;
     line-height: 1.8;
 }
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    text-align: center;
+    
+}
+a.about {
+    background-color: rgb(158, 158, 158);
+    color: rgb(62, 41, 41);
+}
+a.contact {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+.button-container a {
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 5px;
+}
 .bio {
     margin-top: 10px;
 }
@@ -59,6 +80,8 @@ ul {
     color: aqua;
     text-decoration: underline;
 }
+
+
 .image::after {
     content: "";
     position: absolute;

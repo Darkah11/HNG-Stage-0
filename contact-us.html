@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <main>
+      <section class="free-trial">
+        <div class="offer">
+          <p>Send us a message</p>
+        </div>
+        <form class="form" action="">
+          <div class="form-control">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              name="full-name"
+              id="full-name"
+              aria-describedby="full-name-error"
+              data-testid="test-contact-name"
+            />
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <small data-testid="test-contact-error-name" id="full-name-error"  class="error-msg">error</small>
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="E-mail"
+              id="email"
+              aria-describedby="email-error"
+              data-testid="test-contact-email"
+            />
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <small data-testid="test-contact-error-email" id="email-error"  class="error-msg">error</small>
+          </div>
+          <div class="form-control">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              aria-describedby="subject-error"
+              data-testid="test-contact-subject"
+            />
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <small data-testid="test-contact-error-subject" id="subject-error"  class="error-msg">error</small>
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea 
+              id="message"
+              aria-describedby="message-error"
+              data-testid="test-contact-message"
+            ></textarea>
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <small data-testid="test-contact-error-message" id="message-error"  class="error-msg">error</small>
+          </div>
+          <input class="btn" type="submit" value="Submit" data-testid="test-contact-submit" />
+        </form>
+        <p data-testid="test-contact-success" id="success">Form Submitted Successfully!!!</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

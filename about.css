@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+main {
+    padding: 0 ;
+}
+p {
+    line-height: 1.7;
+}
+.bio-text {
+    margin: 20px auto 0;
+    text-align: center;
+    max-width: 500px;
+}
+.bio-text p {
+    margin-top: 10px;
+}
+.img-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.bio img {
+    border-radius: 10px;
+    width: 100%;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    
+}
+a.home {
+    background-color: rgb(158, 158, 158);
+    color: rgb(62, 41, 41);
+}
+a.contact {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+.button-container a {
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+section {
+    padding: 30px 20px;
+}
+.goals h3 {
+    text-align: center;
+    font-size: 24px;
+}
+.goals ul {
+    margin: 0 auto;
+    line-height: 2.0;
+    margin-top: 10px;
+    max-width: 500px;
+}
+.mid-container {
+    background-color: rgb(158, 158, 158);
+    color: rgb(255, 255, 255);
+}
+.confidence h3, .future h3  {
+    color: rgb(62, 41, 41);
+}
+.confidence p {
+margin-top: 10px;
+}
+.future p{
+margin-top: 10px;
+}
+.future i{
+    color: rgb(79, 79, 79);
+}
+.extra {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+.extra div {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.extra p {
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+    .bio {
+        display: flex;
+        align-items: center;
+        max-width: 1140px;
+        margin: 0 auto;
+        gap: 50px;
+    }
+   .bio-text {
+    text-align: left;
+    width: 60%;
+    order: 1;
+
+}
+.button-container {
+    justify-content: flex-start;
+}
+.button-container a {
+    text-align: center;
+}
+.img-container {
+    width: 40%;
+    margin: 0 auto;
+    order: 2;
+}
+.mid-container .inner {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.future {
+    order: 1;
+}
+.confidence {
+    order: 2;
+}
+.confidence, .future {
+    width: 50%;
+}
+.extra h3 {
+    font-size: 30px;
+}
+}
+@media (min-width: 1200px) {
+    
+}
